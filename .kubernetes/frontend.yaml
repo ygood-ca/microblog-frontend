@@ -18,6 +18,7 @@ spec:
       containers:
       - name: "microblog-frontend"
         image: REPLACE_IMAGE
+        imagePullPolicy: Always
         env:
           - name: VUE_APP_BASE_API_URL
             value: http://staging.microblog-backend.v1.k8s.tel 
